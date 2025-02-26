@@ -23,27 +23,11 @@ sudo apt-get update
 sudo apt-get install -y clang
 sudo ln -s -f .clangd ~/.clangd
 
-# BEAR
-sudo apt-get install -y bear
-
-# XCLIP 
-sudo apt-get install -y xclip
-
-# NPM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-export NVM_DIR="$INSTALL_DIR.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm install 16.15.1
-
 # NEOVIM
 wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
 tar xzvf nvim-linux64.tar.gz
 sudo ln -s "${INSTALL_DIR}nvim-linux64/bin/nvim" /usr/local/bin/nvim
 sudo apt-get install -y python3-venv
-
-# RIPGREP
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
-sudo apt-get install "./ripgrep_13.0.0_amd64.deb"
 
 # Git Repository (provided as an argument)
 if [ -n "$1" ]; then
