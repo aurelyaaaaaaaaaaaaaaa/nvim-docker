@@ -24,7 +24,7 @@ rm -rf "${INSTALL_DIR}.config"
  ln -s -f .clangd ~/.clangd
 
 # NEOVIM
-wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz
 tar xzvf nvim-linux64.tar.gz
  ln -s "${INSTALL_DIR}nvim-linux64/bin/nvim" /usr/local/bin/nvim
  apt-get install -y python3-venv
