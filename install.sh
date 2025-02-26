@@ -17,17 +17,17 @@ export DISPLAY=":0"
 
 cd "$INSTALL_DIR"
 rm -rf "${INSTALL_DIR}.config"
-sudo apt-get update
+ apt-get update
 
 # CLANG
-sudo apt-get install -y clang
-sudo ln -s -f .clangd ~/.clangd
+ apt-get install -y clang
+ ln -s -f .clangd ~/.clangd
 
 # NEOVIM
 wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
 tar xzvf nvim-linux64.tar.gz
-sudo ln -s "${INSTALL_DIR}nvim-linux64/bin/nvim" /usr/local/bin/nvim
-sudo apt-get install -y python3-venv
+ ln -s "${INSTALL_DIR}nvim-linux64/bin/nvim" /usr/local/bin/nvim
+ apt-get install -y python3-venv
 
 # Git Repository (provided as an argument)
 if [ -n "$1" ]; then
