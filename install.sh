@@ -30,11 +30,7 @@ tar xzvf nvim-linux64.tar.gz
  apt-get install -y python3-venv
 
 # Git Repository (provided as an argument)
-if [ -n "$1" ]; then
-    git clone "$1" "${INSTALL_DIR}.config/nvim" 
-else
-    echo "Git repository URL not provided, proceeding without"
-fi
+git clone "https://github.com/aurelyaaaaaaaaaaaaaaa/kickstart.nvim.git" "${INSTALL_DIR}.config/nvim" 
 
 # exit
 cd ~
