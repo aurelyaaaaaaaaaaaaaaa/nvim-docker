@@ -10,7 +10,7 @@ One line setup for Neovim inside of an Ubuntu Docker container
 From inside a Docker container, clone the repo:
 
 ```
-git clone https://github.com/aurelyaaaaaaaaaaaaaaa/nvim-docker.git /root/nvim-docker/ && /bin/bash /root/nvim-docker/install.sh
+git clone https://github.com/aurelyaaaaaaaaaaaaaaa/nvim-docker.git /root/nvim-docker/ && /bin/bash /root/nvim-docker/install.sh && git clone https://github.com/aurelyaaaaaaaaaaaaaaa/kickstart.nvim ~/.config/nvim
 ```
 
 ## 📄 License
